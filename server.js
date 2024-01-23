@@ -1,5 +1,4 @@
 const express = require("express");
-const data = require("./data/notes");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./config/db");
@@ -24,4 +23,3 @@ app.use(errorHandler);
 app.listen(PORT, () => {
   console.log(`Server Started on Port ${PORT}`);
 });
-
