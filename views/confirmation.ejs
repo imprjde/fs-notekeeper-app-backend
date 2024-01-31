@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/confirm-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Reset Confirmation | Purple Note</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .parent {
+        height: 100vh;
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .childOne {
+        display: flex;
+        align-items: center;
+      }
+
+      .childOne img {
+        margin-right: 10px;
+      }
+
+      .childTwo {
+        margin-top: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .button {
+        margin-top: 30px;
+        align-items: center;
+        background-image: linear-gradient(
+          144deg,
+          #af40ff,
+          #5b42f3 50%,
+          #00ddeb
+        );
+        border: 0;
+        background: rgb(222, 78, 207);
+        background: linear-gradient(
+          113deg,
+          rgba(222, 78, 207, 1) 40%,
+          rgba(180, 115, 29, 1) 100%
+        );
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        font-family: Phantomsans, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 8px 24px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      .button:active,
+      .button:hover {
+        outline: 0;
+      }
+      .text {
+        font-size: x-large;
+        font-weight: bolder;
+
+        letter-spacing: 1px;
+      }
+
+      .image {
+        height: 40px;
+        width: 40px;
+      }
+
+      @media (max-width: 720px) {
+        .childOne {
+          display: flex;
+          align-items: center;
+          text-align: center;
+        }
+
+        .childOne img {
+          margin: 0;
+          margin-bottom: 10px;
+        }
+
+        .text {
+          font-size: 20px;
+          font-weight: bolder;
+          letter-spacing: 1px;
+          padding-bottom: 8px;
+        }
+
+        .image {
+          height: 30px;
+          width: 30px;
+          padding-right: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="childOne">
+        <img class="image" src="https://i.ibb.co/ZGzk1J4/check.png" />
+        <span class="text">Password Updated Successfully</span>
+      </div>
+      <div class="childTwo">
+        <a href="https://fs-notekeeper-frontend.vercel.app/login" class="button"
+          >Click here to login</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -11,8 +11,6 @@ const {
 router.post("/", registerUser);
 router.post("/login", authUser);
 
-// router.use(protect).post("/profile", updateUserProfile);
-
 router.use(protect);
 router.post("/profile", updateUserProfile);
 

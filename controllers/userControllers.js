@@ -68,7 +68,6 @@ exports.authUser = asyncHandler(async (req, res) => {
 });
 
 exports.updateUserProfile = asyncHandler(async (req, res) => {
-
   const user = await User.findById(req.user._id);
 
   if (user) {
@@ -96,3 +95,5 @@ exports.updateUserProfile = asyncHandler(async (req, res) => {
     throw new Error("User not found!");
   }
 });
+
+exports.forgotPassword = asyncHandler(async (req, res) => {});
